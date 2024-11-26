@@ -15,8 +15,9 @@ class Cricketer{
 int main(){
     Cricketer* dhoni = new Cricketer("India", 100);
     Cricketer* kohli = new Cricketer("India", 18);
-    kohli->country = dhoni->country;
-    kohli->jersey = dhoni->jersey;
+    // kohli->country = dhoni->country;
+    // kohli->jersey = dhoni->jersey;
+    *kohli = *dhoni;
     
     // cout << dhoni->jersey << " " << kohli->jersey << endl;
     delete dhoni;
